@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+
+        <!-- nav is keyboard this is inline block fn -->
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">ContactUs</a>
+            <button class="btnlogin">Login</button>
+        </nav>
+    </header>
+    <div class="wrapper">
+
+        <!-- The <span> tag in HTML is an inline container used to group and style parts of text or document content. Unlike the <div> tag, which is a block-level element, <span> is an inline element, meaning it does not start on a new line and only takes up as much width as necessary.
+
+Here are some key points about the <span> tag:
+
+Purpose: It is used to apply styles or manipulate specific parts of text or content using CSS or JavaScript.
+Attributes: It supports global attributes like class, id, and style, making it easy to target with CSS or JavaScript. -->
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+        <div id="login-box" class="login-box">
+            <h1>Login</h1>
+
+            <!-- This line starts a form element. The action="#" attribute specifies where to send the form data when the form is submitted. Here, # means the form data will not be sent anywhere. -->
+            <form action="#">
+                <div class="input-box">
+
+
+                    <span class="icon"><ion-icon name="mail-unread-outline"></ion-icon></span>
+
+
+                    <!-- This line creates an input field of type email. The required attribute means the user must fill out this field before submitting the form. -->
+
+                    <input type="email" required>
+                    <label>Email</label>
+
+                    <!-- This line creates a label element for the email input field. It helps users understand what the input field is for. -->
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="document-lock-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label>
+                        <input type="checkbox">Remember me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p> Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+
+
+        <!-- form -->
+        <div id="register-box" class="form-box register">
+            <h1>Registration</h1>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-unread-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="document-lock-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label>
+                        <input type="checkbox">I agree to the terms and conditions
+                    </label>
+                    <!-- <a href="#">Forgot Password?</a> -->
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p> Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- for registration -->
+
+
+    </div>
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
